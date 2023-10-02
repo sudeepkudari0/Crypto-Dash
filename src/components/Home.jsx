@@ -1,6 +1,6 @@
 import { Box, Container, Image, Text } from "@chakra-ui/react";
 import React from "react";
-// import btcSrc from "../assets/btc.png";
+import btcSrc from "../btc.png"
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
           w={"full"}
           h={"full"}
           objectFit={"contain"}
-          src={}
+          src={btcSrc}
           filter={"grayscale(1)"}
         /> */}
         </motion.div>
@@ -41,6 +41,7 @@ const Home = () => {
         Crypto-Board
         <Text
          fontSize={"3xl"}
+         fontFamily={"sans-serif"}
          >        
           Welcome to crypto-board, your one-stop destination for real-time cryptocurrency prices across all major cryptocurrency exchanges.
           Stay Updated with ease on the latest crypto market trends
@@ -50,7 +51,28 @@ const Home = () => {
          
     </Box>
     <Box w={"50vw"} bgColor={"blackAlpha.600"}>
-    
+          
+    <motion.div
+        style={{
+          height: "80vh",
+        }}
+        animate={{
+          translateY: "20px",
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse"
+        }}
+      >
+        <Image
+          w={"full"}
+          h={"full"}
+          objectFit={"contain"}
+          src={btcSrc}
+          filter={"grayscale(1)"}
+        />
+        </motion.div>
 
     </Box>
     
